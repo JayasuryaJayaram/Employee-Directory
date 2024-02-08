@@ -1,0 +1,144 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.userDirectory {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(
+      --link
+    ); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(
+        --linkHovered
+      ); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #242424;
+  border-left: 6px solid #018fd4;
+  border-radius: 5px;
+  padding-left: 10px;
+  line-height: 40px;
+}
+
+.searchBox {
+  position: relative;
+  display: inline-block;
+}
+
+.searchBox img {
+  height: 15px;
+  left: 8px;
+  pointer-events: none;
+  position: absolute;
+  top: 14px;
+  width: 15px;
+  pointer-events: none;
+}
+
+.searchBox input {
+  width: 250px;
+  height: 40px;
+  padding-left: 30px;
+  border: 1px solid #e7eaee;
+  border-radius: 4px;
+  box-shadow: 1px 1px 7px 1px #9e9c9c5e;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.employeeCardContainer {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.employeeCard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  height: 150px;
+  flex-basis: 49%;
+  margin: 10px 0;
+  box-shadow: 1px 1px 7px 1px #9e9c9c5e;
+}
+
+.topFlex {
+  display: flex;
+  gap: 10%;
+}
+
+.userPhoto {
+  display: block;
+  margin: auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.userName {
+  color: #4d4d4d;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.jobTitle {
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: darkgray;
+  margin-bottom: 0px;
+}
+
+.bottomFlex {
+  display: flex;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.mail span {
+  color: #018fd4;
+  text-decoration: underline;
+  margin-left: 10px;
+}
